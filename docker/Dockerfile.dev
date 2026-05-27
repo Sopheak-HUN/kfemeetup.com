@@ -1,0 +1,15 @@
+FROM node:24-alpine3.22
+
+WORKDIR /app
+
+COPY --chown=node:node package.json package-lock.json ./
+
+RUN npm ci && mkdir -p /app/.nuxt && chown -R node:node /app
+
+COPY --chown=node:node . .
+
+EXPOSE 3000
+
+USER node
+
+CMD ["npm", "run", "dev"]
