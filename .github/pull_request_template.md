@@ -38,4 +38,5 @@ Describe the tests that you ran to verify your changes. Provide instructions so 
 Please describe the deployment process if any specific steps are required.
 
 - [ ] `npm run deploy`
+- [ ] `docker compose up -d`
 - [ ] Other steps...
