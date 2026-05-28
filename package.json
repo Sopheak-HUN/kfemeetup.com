@@ -19,6 +19,7 @@
     "@nuxt/test-utils": "^4.0.3",
     "@types/node": "^25.9.1",
     "@vue/test-utils": "^2.4.10",
+    "crossws": "^0.4.5",
     "happy-dom": "^20.9.0",
     "vitest": "^4.1.7"
   }
