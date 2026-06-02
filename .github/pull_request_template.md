@@ -27,6 +27,7 @@ Describe the tests that you ran to verify your changes. Provide instructions so 
 
 - [ ] Test A
 - [ ] Test B
+- [ ] Test C
 
 **Test Configuration**:
 * Firmware version:
