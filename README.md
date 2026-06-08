@@ -6,6 +6,7 @@
 ![Docker](https://img.shields.io/badge/Docker-Enabled-2496ED?logo=docker&logoColor=white)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 [![Security Policy](https://img.shields.io/badge/Security-Policy-blue.svg)](SECURITY.md)
+![Code Scanning](https://img.shields.io/badge/Code_Scanning-CodeQL-blueviolet)
 
 > The official frontend client for k'fe meetup, built with modern web technologies.
 
