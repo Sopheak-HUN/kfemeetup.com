@@ -1,5 +1,11 @@
 # k'fe-app — Client
 
+![Nuxt](https://img.shields.io/badge/Nuxt-4-00DC82?logo=nuxt.js&logoColor=white)
+![Vue.js](https://img.shields.io/badge/Vue-3-4FC08D?logo=vuedotjs&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?logo=typescript&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-Enabled-2496ED?logo=docker&logoColor=white)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
 > The official frontend client for k'fe meetup, built with modern web technologies.
 
 This project is built using **Nuxt 4** (Vue 3) and designed to be developed and run seamlessly using **Docker**.
@@ -14,27 +20,28 @@ This project is built using **Nuxt 4** (Vue 3) and designed to be developed and 
 ## 📋 Requirements
 
 To run this project locally, ensure you have the following installed:
+
 - Docker
 - Docker Compose
 
 ## 🛠️ Get Started
 
 1. **Fork the repository**, then **clone your fork** and navigate to the client directory:
+
    ```bash
    git clone https://github.com/<YOUR_USERNAME>/kfemeetup.com.git
    cd kfemeetup.com/client
    ```
-
 2. **Set up environment variables**:
+
    ```bash
    cp .env.example .env
    ```
-
 3. **Start the development server**:
+
    ```bash
    docker compose up --build
    ```
-
 4. **Access the application**:
    Open **http://localhost:3000** in your browser.
 
@@ -43,6 +50,7 @@ To run this project locally, ensure you have the following installed:
 Since the application runs inside Docker, you should run `npm` commands through the container.
 
 **Install a new package:**
+
 ```bash
 docker compose exec client npm install <package>
 docker compose exec client npm install -D <package>   # for dev dependencies
@@ -50,30 +58,31 @@ docker compose exec client npm install -D <package>   # for dev dependencies
 
 **Sync dependencies after pulling code:**
 If `package.json` was updated, run:
+
 ```bash
 docker compose exec client npm install
 ```
 
 ## 💻 Common Commands
 
-| Task | Command |
-| --- | --- |
-| Start dev server | `docker compose up` |
-| Stop dev server | `docker compose down` |
-| Hard reset (remove volumes) | `docker compose down -v` |
-| Run an npm script | `docker compose exec client npm run <script>` |
-| Run unit tests | `docker compose exec client npm run test` |
-| Open a container shell | `docker compose exec client sh` |
+| Task                        | Command                                         |
+| --------------------------- | ----------------------------------------------- |
+| Start dev server            | `docker compose up`                           |
+| Stop dev server             | `docker compose down`                         |
+| Hard reset (remove volumes) | `docker compose down -v`                      |
+| Run an npm script           | `docker compose exec client npm run <script>` |
+| Run unit tests              | `docker compose exec client npm run test`     |
+| Open a container shell      | `docker compose exec client sh`               |
 
 ## ⚙️ Environment Variables
 
 The application relies on the following environment variables (defined in `.env`):
 
-| Key | Purpose | Example |
-| --- | --- | --- |
-| `NUXT_BASE_API_URL` | Backend REST API URL | `http://localhost:8080/api` |
-| `NUXT_BASE_WS_URL` | Backend WebSocket URL | `ws://localhost:8080/ws` |
-| `CLIENT_PORT` | Client exposed port | `3000` |
+| Key                   | Purpose               | Example                       |
+| --------------------- | --------------------- | ----------------------------- |
+| `NUXT_BASE_API_URL` | Backend REST API URL  | `http://localhost:8080/api` |
+| `NUXT_BASE_WS_URL`  | Backend WebSocket URL | `ws://localhost:8080/ws`    |
+| `CLIENT_PORT`       | Client exposed port   | `3000`                      |
 
 ## 📁 Project Structure
 
