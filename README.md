@@ -90,13 +90,23 @@ The application relies on the following environment variables (defined in `.env`
 
 ```text
 client/
-├── app/              # Application layout and root components
-├── docker/           # Dockerfiles for dev and prod environments
-├── public/           # Static public assets
-├── shared/           # Shared utilities and helpers
-├── tests/            # Vitest unit tests
-├── nuxt.config.ts    # Nuxt framework configuration
-└── package.json      # Project dependencies and scripts
+├── app/                 # Application layout and root components
+│   ├── assets/          # Uncompiled assets (images, styles)
+│   ├── components/      # Vue components (auto-imported)
+│   ├── composables/     # Shared Vue composables
+│   ├── layouts/         # Reusable page layouts
+│   ├── middleware/      # Route middleware functions
+│   ├── pagedir/         # Application views and routes
+│   │   └── index.vue    # Homepage view
+│   ├── plugins/         # Nuxt and Vue plugins
+│   ├── app.vue          # Root Vue component
+│   └── error.vue        # Custom error layout
+├── docker/              # Dockerfiles for dev and prod environments
+├── public/              # Static public assets
+├── shared/              # Shared utilities and helpers
+├── tests/               # Vitest unit tests
+├── nuxt.config.ts       # Nuxt framework configuration
+└── package.json         # Project dependencies and scripts
 ```
 
 ## 🔧 Troubleshooting
