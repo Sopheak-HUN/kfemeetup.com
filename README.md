@@ -113,3 +113,7 @@ client/
 ## 🛡️ Security
 
 Please review our [Security Policy](SECURITY.md) for information on supported versions and how to report vulnerabilities safely.
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
