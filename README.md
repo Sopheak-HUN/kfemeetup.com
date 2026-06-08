@@ -1,4 +1,4 @@
-# k'fe-app — Client
+# K'Fe App
 
 ![Nuxt](https://img.shields.io/badge/Nuxt-4-00DC82?logo=nuxt.js&logoColor=white)
 ![Vue.js](https://img.shields.io/badge/Vue-3-4FC08D?logo=vuedotjs&logoColor=white)
