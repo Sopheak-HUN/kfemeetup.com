@@ -96,6 +96,7 @@ client/
 │   ├── composables/     # Shared Vue composables
 │   ├── layouts/         # Reusable page layouts
 │   ├── middleware/      # Route middleware functions
+|   ├── types/           # types of varible or interface
 │   ├── pagedir/         # Application views and routes
 │   │   └── index.vue    # Homepage view
 │   ├── plugins/         # Nuxt and Vue plugins
